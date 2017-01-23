@@ -1,4 +1,4 @@
-# Derbysoft Availability Transformer
+# GKE Example
 
 This project is a demo of how we could write a dockerised micro-service using nodejs
 to run on Google Cloud Platform (GCP).
@@ -14,7 +14,7 @@ HTTP-based micro-service using express or koa, but that is untested.
 * You will need to download a key for connecting to the pub/sub topic. This can be done in the api management console for GCP.
 * Put the key in this project's root folder and name it `keyfile.json`. This could potentially be tidied up to use environmental variables instead.
 * The application can be run as a normal node application using `npm start`.
-* Once the application starts up, it will make a connection to pub/sub to setup a subscription. Messages are passed to a stub Derbysoft client that merely prints out the incoming message.
+* Once the application starts up, it will make a connection to pub/sub to setup a subscription. Messages are passed to a stub rest client that merely prints out the incoming message.
 
 ## Manual Deployment
 
